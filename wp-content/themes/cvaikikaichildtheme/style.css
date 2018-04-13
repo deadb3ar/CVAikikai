@@ -24,26 +24,65 @@
 
 
 /* ____________HEADER SECTION_____________ */
+.site-header-main {
+	background-color: #666;
+	height: 60px;
+}
 
+#masterhead {
+	margin-bottom: 0;
+}
 
+#masthead .site-header-menu li a {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 18px;
+	margin-left: 36px;
+	color: white;
+}
+
+#masthead .site-header-menu li a:hover {
+	color: #cc6633;
+}
 
 /* ____________BODY SECTION_____________ */
+#heroImg {
+	width: 100%;
+}
+
+#heroLogo {
+	position: absolute;
+	z-index: 2;
+	top: 30%;
+	left: 35%;
+}
+
 .homeTest {
 	position: relative;
 	background-color: #666666;
 	width: 100%;
-	height: 380px;
+	height: 420px;
 	float: left;
 	padding-left: 60px;
 	padding-right: 60px;
-	padding-top: 30px;
+	padding-top: 40px;
 	padding-bottom: 30px;
 }
 
 .homeTest p {
-	width: 40%;
+	width: 50%;
 	text-align: right;
 	float: left;
+	font-family: 'Noticia Text', serif;
+	font-size: 24px;
+	color: white;
+	padding-right: 40px;
+	border-right: solid 4px #cc6633;
+}
+
+.homeTest p b {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 48px;
+	color: #cc6633;
 }
 
 .homeTest img {
@@ -51,6 +90,37 @@
 	width: 40%;
 	height: auto;
 	float: right;
+}
+
+#dropIn {
+	position: relative;
+	width: 100%;
+	height: 420px;
+	float: left;
+	padding: auto;
+	padding-top: 10%;
+	padding-bottom: 30px;
+}
+
+#dropIn div {
+	width: auto;
+}
+
+#dropIn div p {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 40px;
+	text-align: center;
+}
+
+#dropIn div button {
+	display: block;
+	width: 220px;
+	height: 40px;
+	background-color: #339999;
+	font-family: 'Noticia Text', serif;
+	font-size: 14px;
+	margin: 0 auto;
+	margin-top: 25px;
 }
 
 .entry-meta {
@@ -64,8 +134,14 @@
 
 
 /* ____________FOOTER SECTION_____________ */
- footer {
-	 position: fixed;
+ .site-footer {
 	 bottom: 0;
 	 width: 100%;
+	 background-color: #666;
+	 
+ }
+
+ .site-info a{
+	font-family: 'Noticia Text', serif;
+	color: white;
  }
