@@ -40,7 +40,7 @@
     <div class="clear"></div>
   </div>
   <?php } ?>
-  <div class="entry-meta">
-    <?php wordstar_entry_meta(); ?>
-  </div>
+  <!-- <div class="entry-meta">
+    
+  </div> -->
 </article>
