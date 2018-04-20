@@ -40,34 +40,36 @@
 /*____________general styling________*/
 h1 {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 72px;
+	font-size: 60px;
 	color: #339999;
 	margin-bottom: 45px;
 	margin-top: 175px;
 	font-weight: 100;
+	height: auto;
  }
 
  h2 {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 60px;
+	font-size: 40px;
 	margin-bottom: 38px;
  }
 
   h3 {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 48px;
+	font-size: 28px;
 	font-weight: 100;
+	margin-bottom: 38px;
  }
 
   p {
 	font-family: 'Noticia Text', serif;
-	font-size: 24px;
+	font-size: 18px;
 	font-weight: 100;
  }
 
  #masthead .site-header-menu li a {
 	font-family: 'Alegreya Sans SC', sans-serif;
-	font-size: 24px;
+	font-size: 18px;
 	margin-left: 36px;
 	color: white;
 	font-weight: 100;
@@ -163,19 +165,18 @@ h1 {
 
 /* ____________Getting started PAGE____________ */
 
-
-
  .gsBox {
 	 width: 100%;
 	 min-height: 450px;
 	 background-color: rgb(102, 102, 102, 0.2);
  }
 
- .middleBox {
-	 max-width: 740px;
-	 height: 450px;
+ .gsBox div {
+	 max-width: 540px;
+	 float: left;
 	 margin-top: 45px;
-	 padding-left: 40px;
+	 margin-left: 40px;
+	 border-left: solid 4px #cc6633;
  }
 
  .gsBox:nth-of-type(2) {
@@ -183,8 +184,16 @@ h1 {
 	text-align: right;
  }
 
- .gsBox p {
-	
+ .gsBox:nth-of-type(2) div {
+	float: right;
+	margin-left: 0;
+	margin-right: 45px;
+	border-left: none;
+	border-right: solid 4px #cc6633;
+ }
+
+ p.gsText {
+	font-size: 20px;
  }
 
 
