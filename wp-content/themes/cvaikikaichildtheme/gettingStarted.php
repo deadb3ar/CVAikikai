@@ -37,6 +37,7 @@ get_header();
             1855 Noel Avenue<br>
             Comox, BC V9M2H4
         </p>
+        <div id="smallP">Find us at the far left gym past the workout gym and the showers</div>
     </div>
 </div>
 <?php get_footer(); ?>

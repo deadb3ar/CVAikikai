@@ -3,7 +3,7 @@
 Plugin Name: WP Google Maps
 Plugin URI: https://www.wpgmaps.com
 Description: The easiest to use Google Maps plugin! Create custom Google Maps with high quality markers containing locations, descriptions, images and links. Add your customized map to your WordPress posts and/or pages quickly and easily with the supplied shortcode. No fuss.
-Version: 7.0.02
+Version: 7.0.03
 Author: WP Google Maps
 Author URI: https://www.wpgmaps.com
 Text Domain: wp-google-maps
@@ -11,6 +11,10 @@ Domain Path: /languages
 */
 
 /* 
+ * 7.0.03 - 2018-04-20
+ * Improved spatial data migration function to be more robust
+ * Fixed undefined index use_fontawesome
+ *
  * 7.0.02 - 2018-04-15
  * Added option to select FontAwesome version
  * Fixed bug with circle data array
@@ -371,7 +375,7 @@ $wpgmza_tblname_poly = $wpdb->prefix . "wpgmza_polygon";
 $wpgmza_tblname_polylines = $wpdb->prefix . "wpgmza_polylines";
 $wpgmza_tblname_categories = $wpdb->prefix. "wpgmza_categories";
 $wpgmza_tblname_category_maps = $wpdb->prefix. "wpgmza_category_maps";
-$wpgmza_version = "7.0.02";
+$wpgmza_version = "7.0.03";
 $wpgmza_p_version = "6.19";
 $wpgmza_t = "basic";
 
@@ -7370,7 +7374,7 @@ if(!function_exists('wpgmza_migrate_spatial_data'))
 		if($wpdb->get_var("SELECT COUNT(id) FROM $wpgmza_tblname WHERE latlng IS NULL LIMIT 1") == 0)
 			return; // Nothing to migrate
 		
-		$wpdb->query("UPDATE ".$wpgmza_tblname." SET latlng=PointFromText(CONCAT('POINT(', lat, ' ', lng, ')'))");
+		$wpdb->query("UPDATE ".$wpgmza_tblname." SET latlng=PointFromText(CONCAT('POINT(', CAST(lat AS DECIMAL(18,10)), ' ', CAST(lng AS DECIMAL(18,10)), ')'))");
 	}
 	
 	add_action('init', 'wpgmza_migrate_spatial_data', 1);
@@ -8395,7 +8399,9 @@ if(!function_exists('wpgmza_enqueue_fontawesome'))
 				'use_fontawesome' => '5.*'
 			);
 		
-		switch($settings['use_fontawesome'])
+		$version = (empty($settings['use_fontawesome']) ? '4.*' : $settings['use_fontawesome']);
+		
+		switch($version)
 		{
 			case '5.*':
 				wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.0.9/css/all.css');

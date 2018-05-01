@@ -214,6 +214,10 @@ Please upgrade your version of WP Google Maps to version 6.0.27 as it includes m
 
 == Changelog ==
 
+= 7.0.03 - 2018-04-20 =
+* Improved spatial data migration function to be more robust
+* Fixed undefined index use_fontawesome
+
 = 7.0.02 - 2018-04-15 =
 * Added option to select FontAwesome version
 * Fixed bug with circle data array
