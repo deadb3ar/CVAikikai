@@ -29,8 +29,8 @@
 	height: 60px;
 }
 
-#masterhead {
-	margin-bottom: 0;
+header#masthead.site-header {
+	margin-bottom: 175px;
 }
 
 #masthead .site-header-menu li a:hover {
@@ -43,10 +43,15 @@ h1 {
 	font-size: 50px;
 	color: #339999;
 	margin-bottom: 45px;
-	margin-top: 175px;
 	font-weight: 100;
 	height: auto;
  }
+ #main .hentry.post-content .entry-title {
+	border-bottom: none;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 50px;
+	padding-top: 0;
+}
 
  h2 {
 	font-family: 'Alegreya Sans SC', sans-serif;
@@ -73,6 +78,11 @@ h1 {
 	margin-left: 36px;
 	color: white;
 	font-weight: 100;
+}
+
+/*current page*/
+#masthead .site-header-menu li.current_page_item a, #masthead .site-header-menu li.current-menu-item a {
+	color: #cc6633!important;
 }
 
 /* ____________Home PAGE_____________ */
@@ -253,7 +263,7 @@ h1 {
 }
 
 /*title of posts*/
-#main .hentry.post-content .entry-title {
+.blog #main .hentry.post-content .entry-title {
 	border-bottom: none;
 	font-family: 'Alegreya Sans SC', sans-serif;
 	font-size: 40px;
@@ -270,8 +280,13 @@ h1 {
 	border-color: #cc6633;
 	color: #cc6633;
 }
+/*INSIDE POST*/
+.single-post footer {
+	display: none;
+}
 
 /* ____________Contaact PAGE____________ */
+
 #main.single-post {
 	background: none;
 	border: none;
@@ -317,6 +332,7 @@ div.wpcf7 {
 .page-id-16 footer {
 	display: none;
 }
+
 
 /* =============FOOTER SECTION============= */
  .site-footer {
