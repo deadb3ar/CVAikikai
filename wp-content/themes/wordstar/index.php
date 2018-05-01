@@ -9,6 +9,7 @@
  * */
  get_header(); 
 ?>
+<h1 id="contentH1">news</h1>
 <main id="main" class="site-main content-area archives" role="main">
   <?php if ( have_posts() ) 
   { 

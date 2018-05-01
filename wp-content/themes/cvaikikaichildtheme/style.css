@@ -86,6 +86,9 @@ h1 {
 }
 
 /* ____________Home PAGE_____________ */
+.page-id-28 header#masthead.site-header {
+	margin-bottom: 0;
+}
 #heroImg {
 	width: 100%;
 }
@@ -222,6 +225,15 @@ h1 {
 
 /* ____________News PAGE____________ */
 /*whole posts*/
+
+#contentH1 {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 60px;
+	color: #339999;
+	margin-bottom: 80px;
+	font-weight: 100;
+	height: auto;
+}
 #main .hentry, #secondary.sidebar .widget, section.no-results {
 	border: none;
 	border-left: solid 4px #cc6633;
@@ -285,7 +297,7 @@ h1 {
 	display: none;
 }
 
-/* ____________Contaact PAGE____________ */
+/* ____________Contact PAGE____________ */
 
 #main.single-post {
 	background: none;
@@ -333,6 +345,70 @@ div.wpcf7 {
 	display: none;
 }
 
+/* ____________About PAGE____________ */
+.accordSection {
+	border-left: solid 4px #cc6633;
+	background: #ebebeb;
+}
+.accordion {
+    height: auto;
+}
+
+.entry-content h3{
+	margin: 0;
+}
+
+div.accordSection > h2 {
+	background: #666666;
+	color: white;
+	margin: 0;
+	padding: 30px 0;
+	padding-left: 30px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 40px;
+}
+
+h3.accordion-title {
+	margin: 0;
+	margin-bottom: 0;
+	padding: 30px 0;
+	padding-left: 30px;
+	background: #ebebeb;
+	color: #cc6633;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+.accordion-content {
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
+/*.accordion-content p{
+	float: left;
+	width: 30%;
+}*/
+
+
+.accordion-content > p:nth-child(3){
+	
+	
+}
+
+
+
+.accordQuote{
+
+}
+
+.accordion-title:hover {
+	cursor: pointer;
+}
+
+/*.accordion-title:hover {}
+.accordion-title:first-child {border: none;}
+.accordion-title.open {cursor: default;}
+.accordion-content {padding-bottom: 20px;}*/
 
 /* =============FOOTER SECTION============= */
  .site-footer {
