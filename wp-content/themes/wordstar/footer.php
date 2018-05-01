@@ -26,6 +26,7 @@
     </div>
     <?php } ?>
   </div>
+  
   <div class="site-info wrapper">
     <?php
     if (has_nav_menu('footer')) {

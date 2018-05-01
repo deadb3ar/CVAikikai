@@ -271,13 +271,58 @@ h1 {
 	color: #cc6633;
 }
 
+/* ____________Contaact PAGE____________ */
+#main.single-post {
+	background: none;
+	border: none;
+}
+
+div.contactBox {
+	background: #ebebeb;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	max-width: 790px;
+}
+div.wpcf7 {
+	border-left: solid 4px #cc6633;
+	padding-left: 25px;
+}
+
+#wpcf7-f52-p16-o1 > form > p:nth-child(6) > input {
+	background: #cc6633;
+	width: 100px;
+	margin-top: 15px;
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	text-transform: uppercase;
+}
+
+.wpcf7 input[type="text"],
+.wpcf7 input[type="email"],
+.wpcf7 textarea
+{
+	font-family: 'Alegreya Sans SC', sans-serif;
+	font-size: 18px;
+	font-weight: 100;
+	text-transform: uppercase;
+	color: #9a9999;
+	min-height: 50px;
+}
+.wpcf7 textarea {
+	width: 400px;
+}
+
+.page-id-16 footer {
+	display: none;
+}
 
 /* =============FOOTER SECTION============= */
  .site-footer {
 	 bottom: 0;
 	 width: 100%;
 	 background-color: #666;
-	 
  }
 
  .site-info a{
